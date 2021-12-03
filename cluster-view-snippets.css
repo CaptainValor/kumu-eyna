@@ -1,0 +1,75 @@
+
+/* Good Code 12/3/21 */
+
+@settings {
+  template: custom;
+  culling: false;
+  element-text-align: bottom;
+  element-color: categorize("Element type", set3);
+  layout: force;
+  connection-curvature: 0;
+  layout-gravity: 0.0001;
+  layout-particle-charge: 700;
+  connection-length: 100;
+  connection-strength: 0.01;
+  layout-preset: dense;
+  direct-decorations: false;
+}
+
+element {
+  size: 100;
+  outline: 10px;
+  outline-color: black;
+}
+
+connection {
+  size: 30;
+  color: green;
+  opacity: 0.3;
+}
+
+["Label" *= "Category:"] {
+  size: 300;
+  text-align: center;
+  font-size: 200;
+}
+
+
+/* Previously Good Code */
+
+@settings {
+  template: custom;
+  layout: static;
+  culling: false;
+  element-text-align: bottom;
+  element-color: categorize("Element type", set2);
+  direct-decorations: false;
+}
+
+element {
+  size: 100;
+}
+
+@settings {
+  template: custom;
+  culling: false;
+  element-text-align: bottom;
+  element-color: categorize("Element type", set3);
+  layout: force;
+  connection-curvature: 0;
+  layout-gravity: 0;
+  layout-particle-charge: 1000;
+  connection-length: 100;
+  connection-strength: 0.01;
+  layout-preset: dense;
+}
+
+element {
+  size: 200;
+}
+
+connection {
+  size: 100;
+  color: #000;
+  opacity: 0.5;
+}
